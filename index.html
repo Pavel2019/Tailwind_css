@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- daisy ui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="w-full">
+        <!-- Top bar -->
+        <div class="h-[53px] bg-[#4582AE] flex items-center justify-center px-2">
+            <p class="text-white text-xs sm:text-sm md:text-base text-center">
+            FREE EXPRESS DELIVERY FOR ORDER ABOVE $200
+            </p>
+        </div>
+        <!-- Navbar -->
+        <div class="navbar h-auto md:h-[110px] max-w-screen-xl mx-auto flex flex-wrap justify-between items-center px-4 md:px-8">
+            <!-- Logo -->
+                <img class="h-12 md:h-[100px] w-auto" src="./images/logo png.png" alt="Logo">
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex items-center space-x-6 lg:space-x-10">
+                <li><a class="text-sm md:text-lg lg:text-xl font-semibold" href="#">Watches</a></li>
+                <li><a class="text-sm md:text-lg lg:text-xl font-semibold" href="#">Eyewear</a></li>
+                <li><a class="text-sm md:text-lg lg:text-xl font-semibold" href="#">Accessories</a></li>
+                <li><a class="text-sm md:text-lg lg:text-xl font-semibold" href="#">News</a></li>
+                </ul>
+                <!-- CTA Button -->
+                <button class="hidden lg:inline-block text-[20px] font-bold border-2 rounded-full py-2 px-4 lg:py-[10px] lg:px-[24px] mt-2 lg:mt-0"> FIND YOUR STYLE</button>
+                <!-- Mobile Menu  -->
+                <div class="md:hidden"> <button id="menu-btn" class="text-white bg-[#19314D] px-3 py-2 rounded">☰ </button></div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#19314D] text-white px-6 py-4 space-y-3">
+            <a href="#" class="block text-sm font-semibold">Watches</a>
+            <a href="#" class="block text-sm font-semibold">Eyewear</a>
+            <a href="#" class="block text-sm font-semibold">Accessories</a>
+            <a href="#" class="block text-sm font-semibold">News</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- hero section  -->
+        <section>
+            <div class="max-w-screen-xl flex flex-col lg:flex-row items-center lg:items-start mx-auto px-4">
+                <!-- Text Section -->
+                <div class="flex-1">
+                    <p class="text-3xl md:text-5xl font-bold mt-12 lg:mt-[172px] text-center lg:text-start"> Get your unmatched <br> quality and durability <br> footwears
+                    </p>
+                    <p class="text-base md:text-xl font-bold mt-6 mb-8 text-center lg:text-start">
+                    Explore your fashion world with our luxury look <br>
+                    with affordable price tag sneakers
+                    </p>
+                    <div class="flex justify-center lg:justify-start">
+                        <button
+                            class="border-2 rounded-full py-3 px-6 md:py-[15px] md:px-[30px] text-base md:text-[20px] font-bold mb-12 lg:mb-[177px]">
+                            FIND YOUR STYLE
+                        </button>
+                    </div>
+                </div>
+                <!-- Image Section -->
+                <div class="flex-1">
+                    <img class="w-full max-w-md lg:max-w-full mb-12 lg:mb-[104px]" src="./images/hero pic.jpg" alt="Hero">
+                </div>
+            </div>
+        </section>
+
+        <!-- AS seen in section  -->
+        <section class="py-12">
+            <div class="max-w-screen-xl mx-auto px-4">
+                <p class="text-base md:text-lg font-bold text-center mb-6">
+                    AS SEEN IN </p>
+                <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-6">
+                    <img class="h-8 md:h-10 lg:h-12" src="./images/google-1 1.jpg" alt="Google">
+                    <img class="h-8 md:h-10 lg:h-12" src="./images/airbnb 2.png" alt="Airbnb">
+                    <img class="h-8 md:h-10 lg:h-12" src="./images/glossier 3.png" alt="Glossier">
+                    <img class="h-8 md:h-10 lg:h-12" src="./images/netflex 4.png" alt="Netflix">
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits of daily use section starts here  -->
+        <section>
+            <div class="w-full h-auto bg-[#2970B1]">
+                <div class="max-w-screen-xl mx-auto flex flex-col lg:flex-row items-center lg:items-start px-6 py-12 lg:py-24">  
+                    <!-- Left Section (Text + Features) -->
+                    <div class="flex-1">
+                        <!-- Title -->
+                        <p class="text-2xl md:text-4xl lg:text-[53px] text-white font-bold text-center lg:text-left mb-10">
+                        Benefits of daily use </p>
+                        <!-- Feature 1 -->
+                        <div class="flex items-start mb-10">
+                            <img class="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16" src="./images/comfort sign.png" alt="Comfort">
+                                <div class="ml-4 md:ml-6">
+                                    <p class="text-base md:text-lg lg:text-[24px] text-white font-semibold">Comfort</p>
+                                    <p class="text-sm md:text-base lg:text-[18px] mt-2 text-white font-medium">
+                                    Whether you're walking, running, or standing for extended periods, 
+                                    the cushioning helps to absorb impact and reduce strain on your feet.
+                                    </p>
+                                </div>
+                        </div>
+
+                            <!-- Feature 2 -->
+                        <div class="flex items-start">
+                            <img class="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16" src="./images/versatility pic.jpg" alt="Versatility">
+                                <div class="ml-4 md:ml-6">
+                                    <p class="text-base md:text-lg lg:text-[24px] text-white font-semibold">Versatility</p>
+                                    <p class="text-sm md:text-base lg:text-[18px] mt-2 text-white font-medium">
+                                    Our footwear adapts to various lifestyles, providing the same level of 
+                                    support whether you’re casual, sporty, or formal.
+                                    </p>
+                                </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Section (Image) -->
+                    <div class="flex-1 mt-12 lg:mt-0">
+                        <img class="w-full max-w-md lg:max-w-full mx-auto" src="./images/benifits of daily use section picture.jpg" alt="Daily Use Benefits">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What people says about us -->
+        <section class="bg-[#19314D] py-16">
+            <div class="max-w-screen-xl mx-auto px-4">
+                <p class="text-2xl md:text-4xl lg:text-[53px] text-white font-bold text-center mb-4">
+                What people says about us </p>
+                <p class="text-base md:text-lg text-white font-semibold text-center mb-16">
+                Here’s what some of our 55,600 customers have to say </p>
+                <!-- Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+                        <!-- 1st Card -->
+                    <div class="relative w-full max-w-sm bg-white p-4 rounded-md shadow">
+                        <img class="mt-2 ml-2 w-12 h-12" src="./images/circle 1.png" alt="Wilson Jay">
+                        <p class="mt-2 ml-2 text-lg font-bold text-[#4582AE]">Wilson Jay</p>
+                        <p class="mt-3 text-sm md:text-base font-medium text-[#4582AE] text-center px-2">
+                            “Top-notch, providing comfort whether I'm walking or running. 
+                            Stylish touch to any outfit."</p>
+                        <img class="absolute top-4 right-4 w-20" src="./images/star.png" alt="Rating">
+                    </div>
+                        <!-- 2nd Card -->
+                    <div class="relative w-full max-w-sm bg-white p-4 rounded-md shadow">
+                        <img class="mt-2 ml-2 w-12 h-12" src="./images/circle 2.png" alt="Nelson Stones">
+                        <p class="mt-2 ml-2 text-lg font-bold text-[#4582AE]">Nelson Stones</p>
+                        <p class="mt-3 text-sm md:text-base font-medium text-[#4582AE] text-center px-2">
+                            “They fit like a glove and the arch support is fantastic, perfect for my workouts."</p>
+                        <img class="absolute top-4 right-4 w-20" src="./images/star.png" alt="Rating">
+                    </div>
+                        <!-- 3rd Card -->
+                    <div class="relative w-full max-w-sm bg-white p-4 rounded-md shadow">
+                        <img class="mt-2 ml-2 w-12 h-12" src="./images/circle 3.png" alt="Elisha Clark">
+                        <p class="mt-2 ml-2 text-lg font-bold text-[#4582AE]">Elisha Clark</p>
+                        <p class="mt-3 text-sm md:text-base font-medium text-[#4582AE] text-center px-2">
+                            “The support they provide is incredible, and I no longer have foot pain after long shifts at work."</p>
+                        <img class="absolute top-4 right-4 w-20" src="./images/star.png" alt="Rating">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quality you can feel -->
+        <section class="py-16">
+            <div class="max-w-screen-xl mx-auto px-4">
+                <p class="text-2xl md:text-4xl lg:text-[53px] text-black font-bold text-center mb-12"> Quality you can feel</p>
+                <!-- Leather -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mb-16">
+                    <div>
+                        <img class="w-full rounded-md shadow" src="./images/leather.jpg" alt="Leather">
+                    </div>
+                    <div>
+                        <p class="text-2xl md:text-3xl font-bold mb-4">Leather</p>
+                        <p class="text-base md:text-lg mb-6">
+                        Leather in sneakers offers a blend of style, durability, water resistance, and comfort, making
+                        them a popular choice for those seeking a versatile and long-lasting footwear option.
+                        Whether for everyday wear, travel, work, or special occasions, leather sneakers are a timeless
+                        addition to any wardrobe.
+                        </p>
+                        <button class="border border-[#2970B1] border-dashed px-8 py-3 text-base md:text-lg font-bold rounded">
+                        Classic Aesthetic
+                        </button>
+                    </div>
+                </div>
+                <!-- Foam -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                    <div class="order-2 lg:order-1">
+                        <p class="text-2xl md:text-3xl font-bold mb-4">Foam</p>
+                        <p class="text-base md:text-lg mb-6">
+                        Foam plays a vital role in enhancing the comfort, support, and performance of sneakers.
+                        Whether for casual wear, athletic activities, or everyday use, the use of foam in the midsole
+                        ensures that sneakers provide the necessary cushioning, responsiveness, and support.
+                        </p>
+                        <button class="border border-[#2970B1] border-dashed px-8 py-3 text-base md:text-lg font-bold rounded">
+                        Classic Aesthetic
+                        </button>
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <img class="w-full rounded-md shadow" src="./images/foam.png" alt="Foam">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- How our customers Feel -->
+        <section>
+            <div class="relative w-full mx-auto bg-[#2970B1] py-16 px-4 md:px-10">
+                <!-- Heading -->
+                <div>
+                    <p class="text-center text-white text-3xl md:text-5xl font-bold mb-4">
+                        How our customers Feel
+                    </p>
+                    <p class="text-center text-white text-lg md:text-2xl font-semibold">
+                        See the experience before you feel it
+                    </p>
+                </div>
+                <!-- Image Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto mt-12">
+                    <div><img class="w-full h-[300px] md:h-[400px] object-cover rounded-lg" src="./images/cus feel 01.png" alt=""></div>
+                    <div><img class="w-full h-[300px] md:h-[400px] object-cover rounded-lg" src="./images/cus feel 02.png" alt=""></div>
+                    <div><img class="w-full h-[300px] md:h-[400px] object-cover rounded-lg" src="./images/cus feel 03.png" alt=""></div>
+                    <div><img class="w-full h-[300px] md:h-[400px] object-cover rounded-lg" src="./images/cus feel 04.png" alt=""></div>
+                </div>
+                <!-- Button -->
+                <div class="text-center mt-12">
+                    <button
+                        class="border-2 rounded-full py-3 px-6 border-white text-white font-bold text-lg md:text-xl hover:bg-white hover:text-[#2970B1] transition"> FIND YOUR STYLE
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- BEST SELLER part -->
+        <section>
+            <div class="w-full mx-auto py-16 px-4 md:px-10">
+                <p class="text-center text-black text-3xl md:text-5xl font-bold mb-10"> BEST SELLER</p>
+                <!-- Cards Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                    <!-- 1st card -->
+                    <div class="card bg-base-100 shadow-sm">
+                        <figure>
+                        <img class="w-full h-[300px] object-cover rounded-lg" src="./images/best seller 01.jpg" /> </figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-2xl font-bold mb-4">StrideMax</h2>
+                                <div class="card-actions">
+                                    <button class="text-sm md:text-base font-semibold bg-[#19314d] text-white py-3 px-6 rounded-md">
+                                    SHOP NOW - 20% OFF </button>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- 2nd card -->
+                    <div class="card bg-base-100 shadow-sm">
+                        <figure>
+                        <img class="w-full h-[300px] object-cover rounded-lg" src="./images/best seller 02" />
+                        </figure>
+                        <div class="card-body">
+                        <h2 class="card-title text-2xl font-bold mb-4">StrideMax</h2>
+                            <div class="card-actions">
+                                <button class="text-sm md:text-base font-semibold bg-[#19314d] text-white py-3 px-6 rounded-md">
+                                SHOP NOW - 20% OFF
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3rd card -->
+                    <div class="card bg-base-100 shadow-sm">
+                        <figure>
+                        <img class="w-full h-[300px] object-cover rounded-lg" src="./images/best seller 03.png" />
+                        </figure>
+                        <div class="card-body">
+                        <h2 class="card-title text-2xl font-bold mb-4">StrideMax</h2>
+                        <div class="card-actions">
+                            <button class="text-sm md:text-base font-semibold bg-[#19314d] text-white py-3 px-6 rounded-md">
+                            SHOP NOW - 20% OFF
+                            </button>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- 4th card -->
+                    <div class="card bg-base-100 shadow-sm">
+                        <figure>
+                        <img class="w-full h-[300px] object-cover rounded-lg" src="./images/best seller 04.png" />
+                        </figure>
+                        <div class="card-body">
+                        <h2 class="card-title text-2xl font-bold mb-4">StrideMax</h2>
+                        <div class="card-actions">
+                            <button class="text-sm md:text-base font-semibold bg-[#19314d] text-white py-3 px-6 rounded-md">
+                            SHOP NOW - 20% OFF
+                            </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Starts here -->
+        <section>
+            <div class="w-full mx-auto bg-[#2970B1] py-12 px-4 md:px-10">
+                <!-- Title -->
+                <p class="text-3xl md:text-5xl text-white text-center font-bold mb-8">FAQs</p>
+                <!-- FAQ container -->
+                <div class="max-w-3xl mx-auto space-y-4">
+                    <!-- 01 -->
+                    <div class="collapse collapse-plus bg-white border border-base-300">
+                        <input type="radio" name="faq-accordion" checked="checked" />
+                        <div class="collapse-title text-lg md:text-xl font-semibold text-[#2c2c2c] text-center">
+                        What are the best sneakers for running?
+                        </div>
+                        <div class="collapse-content text-sm md:text-base text-center">
+                        <!-- You can add answer here if needed -->
+                        </div>
+                    </div>
+                    <!-- 02 -->
+                    <div class="collapse collapse-plus bg-white border border-base-300">
+                        <input type="radio" name="faq-accordion" />
+                        <div class="collapse-title text-lg md:text-xl font-semibold text-[#2c2c2c] text-center">
+                        I forgot my password. What should I do?
+                        </div>
+                        <div class="collapse-content text-sm md:text-base text-center">
+                        Click on "Forgot Password" on the login page and follow the instructions sent to your email.
+                        </div>
+                    </div>
+                    <!-- 03 -->
+                    <div class="collapse collapse-plus bg-white border border-base-300">
+                        <input type="radio" name="faq-accordion" />
+                        <div class="collapse-title text-lg md:text-xl font-semibold text-[#2c2c2c] text-center">
+                        How do I update my profile information?
+                        </div>
+                        <div class="collapse-content text-sm md:text-base text-center">
+                        Go to "My Account" settings and select "Edit Profile" to make changes.
+                        </div>
+                    </div>
+                    <!-- 04 -->
+                    <div class="collapse collapse-plus bg-white border border-base-300">
+                        <input type="radio" name="faq-accordion" />
+                        <div class="collapse-title text-lg md:text-xl font-semibold text-[#2c2c2c] text-center">
+                        How do I update my profile information?
+                        </div>
+                        <div class="collapse-content text-sm md:text-base text-center">
+                        Go to "My Account" settings and select "Edit Profile" to make changes.
+                        </div>
+                    </div>
+                    <!-- 05 -->
+                    <div class="collapse collapse-plus bg-white border border-base-300">
+                        <input type="radio" name="faq-accordion" />
+                        <div class="collapse-title text-lg md:text-xl font-semibold text-[#2c2c2c] text-center">
+                        How do I update my profile information? </div>
+                        <div class="collapse-content text-sm md:text-base text-center"> Go to "My Account" settings and select "Edit Profile" to make changes. </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="w-full bg-[#19314D] py-8 px-4 md:px-10">
+            <div class="flex justify-center">
+                <img class="w-28 h-20 md:w-32 md:h-24 object-contain" src="./images/logo png.png" alt="logo">
+            </div>
+            <p class="text-center text-white mt-4 text-sm md:text-base">
+                Copyright © 2022 SportShoe. All Rights Reserved
+            </p>
+        </footer>
+    </main>
+</body>
+</html>
